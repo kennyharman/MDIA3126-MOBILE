@@ -1,19 +1,43 @@
 import { View } from "react-native"
-import InputForm from "@/components/molecules/InputForm"
+import Post from "@/components/molecules/Post"
+import { setNativeProps } from "react-native-reanimated"
 
 export default function HomeScreen() {
   return (
     <View style={{
       flex: 1,
-      justifyContent: "center",
-      alignItems: "center"
+      justifyContent: "flexStart",
+      alignItems: "center",
+      paddingTop: 220,
+      paddingBottom: 220,
     }}
     >
-    <InputForm
-      buttonText="GOD'S PLAN"
-      labelText="CLICK TO UPDATE GOD'S PLAN"
-      placeholderText="WHERE DO I FIND THE REST BUTTON"
-    />
+    <View style={{
+      flex: 1,
+      justifyContent: "center",
+      alignItems: "center",
+      paddingLeft: 30,
+      paddingRight: 30,
+      backgroundColor: "#22303c",
+      borderWidth: 4,
+      borderColor: "#8899ac",
+      borderRadius: 20
+    }}>
+        <View>
+          <Post
+            postMessage = "RAISINS ARE DELICIOUS WHEN USED IN CEREAL AND COOKIES"
+         />
+          <p style = {{
+            fontFamily: "sans-serif",
+            color: "#1DA1F2",
+            fontWeight: "bold",
+            marginTop: -1.5,
+            fontSize: 18
+          }}>
+            @Official_RaisinBran
+          </p>
+        </View>
+      </View>
     </View>
   )
 }
