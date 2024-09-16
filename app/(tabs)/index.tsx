@@ -19,9 +19,12 @@ export default function HomeScreen() {
       paddingLeft: 30,
       paddingRight: 30,
       backgroundColor: "#22303c",
-      borderWidth: 4,
-      borderColor: "#8899ac",
-      borderRadius: 20
+      borderRadius: 8,
+      shadowColor: "#000",
+      shadowOffset: { width: -6, height: 9 },
+      shadowOpacity: 0.4,
+      shadowRadius: 4,
+      elevation: 5
     }}>
         <View>
           <Post
