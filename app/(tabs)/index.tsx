@@ -21,10 +21,10 @@ export default function HomeScreen() {
       backgroundColor: "#22303c",
       borderRadius: 8,
       shadowColor: "#000",
-      shadowOffset: { width: -6, height: 9 },
+      shadowOffset: { width: -3, height: 9 },
       shadowOpacity: 0.4,
       shadowRadius: 4,
-      elevation: 5
+      elevation: 4
     }}>
         <View>
           <Post
